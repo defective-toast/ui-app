@@ -1,6 +1,5 @@
 "use client";
 import { useReducer } from "react";
-import Toolbar from "./toolbar";
 
 interface State {
   count: number;
