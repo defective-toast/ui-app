@@ -1,5 +1,11 @@
-"use client";
-
-export default function Page1() {
-  return <h1>Page 1</h1>;
+export default async function Page1() {
+  let data = await fetch("https://api.vercel.app/blog");
+  let posts = await data.json();
+  return (
+    <ul>
+      {posts.map((post) => (
+        <li key={post.id}>{post.title}</li>
+      ))}
+    </ul>
+  );
 }

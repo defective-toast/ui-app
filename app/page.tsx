@@ -31,7 +31,6 @@ export default function App() {
 
   return (
     <div>
-      <Toolbar></Toolbar>
       <h1>Welcome to my counter</h1>
 
       <p className="text-sm">Count: {state.count}</p>

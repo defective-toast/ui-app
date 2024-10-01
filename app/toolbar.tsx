@@ -8,6 +8,7 @@ export default function Toolbar() {
 
   return (
     <div>
+      <button onClick={() => router.push("/")}>Go Home</button>
       <Link href="/page1">page 1 with link</Link>
       <button onClick={() => router.push("/page1")}>Go to page 1</button>
       <button onClick={() => router.push("/page2")}>Go to page 2</button>
